@@ -1,12 +1,16 @@
-/* See LICENSE file for copyright and license details. */
+/*
+  _                                   _                     
+ (_)                                 | |                    
+  _ _   _  __ _ _ __ ___  _ __   __ _| |__   ___  ___ _ __  
+ | | | | |/ _` | '_ ` _ \| '_ \ / _` | '_ \ / _ \/ _ \ '_ \ 
+ | | |_| | (_| | | | | | | | | | (_| | |_) |  __/  __/ | | |
+ |_|\__, |\__,_|_| |_| |_|_| |_|\__,_|_.__/ \___|\___|_| |_|
+     __/ |   ##slstatus`                                               
+    |___/                                                   
+*/
 
-/* interval between updates (in ms) */
 const unsigned int interval = 1000;
-
-/* text to show if no value can be retrieved */
 static const char unknown_str[] = "n/a";
-
-/* maximum output string length */
 #define MAXLEN 2048
 
 /*
@@ -69,5 +73,5 @@ static const struct arg args[] = {
 	{ run_command, "墳%4s | ", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
 	{ cpu_perc, "^c#e639c0^ [CPU  %s%%]   ", NULL	      }*/
 	{ ram_perc, "^c#e639c0^ [RAM  %s%%] ", NULL	      },
-	{ datetime, "^c#e69039^ %s  ",           "%a %b %r" },
+	{ datetime, "^c#9920ba^ %s  ",           "%a %b %r" },
 };

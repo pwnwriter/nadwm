@@ -6,27 +6,9 @@ include config.mk
 
 REQ = util
 COM =\
-	components/battery\
-	components/cpu\
 	components/datetime\
-	components/disk\
-	components/entropy\
-	components/hostname\
-	components/ip\
-	components/kernel_release\
-	components/keyboard_indicators\
-	components/keymap\
-	components/load_avg\
-	components/netspeeds\
-	components/num_files\
 	components/ram\
 	components/run_command\
-	components/swap\
-	components/temperature\
-	components/uptime\
-	components/user\
-	components/volume\
-	components/wifi
 
 all: slstatus
 
